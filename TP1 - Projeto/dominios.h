@@ -26,8 +26,8 @@ inline Tipo Dominio::getValor() const{
 ----------------------------------------------------------------------- */
 class Cidade {
     private:
-        static const string cidades_validas[15] = {"Hong Kong", "Bangkok", "Macau", "Singapura", "Londres", "Paris", "Dubai", "Delhi",
-        "Istambul", "Kuala Lumpur", "Nova Iorque", "Antalya", "Mumbai", "Shenzhen", "Phuket"};
+        //static const string cidades_validas[15] = {"Hong Kong", "Bangkok", "Macau", "Singapura", "Londres", "Paris", "Dubai", "Delhi",
+        //"Istambul", "Kuala Lumpur", "Nova Iorque", "Antalya", "Mumbai", "Shenzhen", "Phuket"};
         const string valor;
         void validar(string);
     public:
@@ -36,6 +36,22 @@ class Cidade {
 };
 
 inline string Cidade::getValor() const{
+    return valor;
+}
+
+//----------------------------------------------------------------------- */
+//Matricula: 202021749
+// Felipe Dantas Borges
+class Email {
+    private:
+        string valor;                      // Atributo para armazenar valor.
+        void validar(string);              // Método para validar valor.
+    public:
+        void setValor(string);             // Método para atribuir valor.
+        string getValor() const;           // Método para recuperar valor.
+};
+
+inline string Email::getValor() const{
     return valor;
 }
 
@@ -51,7 +67,7 @@ class Data {
         string getValor() const;           // Método para recuperar valor.
 };
 
-inline string Endereco::getValor() const{
+inline string Data::getValor() const{
     return valor;
 }
 
@@ -88,4 +104,4 @@ inline string Titulo::getValor() const{
     return valor;
 }
 
-
+#endif // DOMINIOS_H_INCLUDED
