@@ -99,7 +99,7 @@ class Titulo {
     public:
         void setValor(string);
         string getValor() const;
-
+};
 inline string Titulo::getValor() const{
     return valor;
 }
