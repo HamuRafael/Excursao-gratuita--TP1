@@ -79,8 +79,7 @@ void Email::validar(string valor){
 void Email::setValor(string valor) {
     validar(valor);
     this->valor = valor;
-
-
+}
 
 
 // --------------------------------------------------------------------------
@@ -136,7 +135,7 @@ void Data::setValor(string valor) {
     validar(valor);
     this->valor = valor;
 
-
+}
 // --------------------------------------------------------------------------
 //Endereco:
 //Matricula: 202021749
@@ -176,7 +175,7 @@ void Endereco::validar(string valor){
     else if (valido == 0){
         throw invalid_argument("Argumento invalido.");
     }
-
+}
 void Endereco::setValor(string valor) {
     validar(valor);
     this->valor = valor;
@@ -225,6 +224,7 @@ void Titulo::validar(string valor){
     else if (valido == 0){
         throw invalid_argument("Argumento invalido.");
     }
+}
 void Titulo::setValor(string valor) {
     validar(valor);
     this->valor = valor;
